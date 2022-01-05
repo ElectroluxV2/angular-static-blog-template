@@ -4,7 +4,7 @@ const fs = require('fs');
 const asciidoctor = Asciidoctor();
 const BLOG_PATH = 'blog';
 const RENDERED_PATH = 'src/assets/blog';
-const RENDERED_JSON = 'src/assets/blog.json';
+const RENDERED_JSON = RENDERED_PATH + '/blog.json';
 const ROUTES_TXT = 'prerender-routes.txt';
 
 highlightJsExt.register(asciidoctor.Extensions);

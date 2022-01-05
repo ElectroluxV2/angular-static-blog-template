@@ -18,7 +18,7 @@ export class BlogService {
   }
 
   private async prefetchAllData() {
-    const blog = await firstValueFrom(this.http.get<Blog>("http://localhost:4200/assets/blog.json")) as Blog;
+    const blog = await firstValueFrom(this.http.get<Blog>("http://localhost:4200/assets/blog/blog.json")) as Blog;
     this.cache.set('blog', blog);
 
     for (const post of blog.posts) {
