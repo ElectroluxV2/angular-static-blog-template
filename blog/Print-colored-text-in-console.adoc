@@ -1,0 +1,16 @@
+:title: Print colored text in console
+:description: Blog post
+:category: Default
+
+== Print colored text in console
+
+Your task is to print in red `Goodbye Cruel World`.
+
+== Notes
+You can print colored text using `Console Virtual Terminal Sequences` +
+Read more about them https://docs.microsoft.com/en-us/windows/console/console-virtual-terminal-sequences[here]
+
+____
+``Console Virtual Terminal Sequences`` are enabled by default only on Linux and macOS. +
+To use them on Windows, please refer to https://superuser.com/a/1300251[this] answer.
+____
