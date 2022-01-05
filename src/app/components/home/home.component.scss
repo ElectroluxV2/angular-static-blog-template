@@ -1,6 +1,5 @@
 .title {
   text-align: center;
-  font-size: 3rem;
   padding: 1em 0;
   border-bottom: 0;
 }
@@ -13,10 +12,16 @@
 
   .links {
     display: flex;
+    flex-wrap: wrap;
     gap: 1em;
+
     li {
       margin: 0;
       list-style: none;
+
+      min-width: 200px;
+      flex-basis: auto;
+      flex-grow: 1;
     }
   }
 }
