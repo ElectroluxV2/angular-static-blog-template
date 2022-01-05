@@ -25,5 +25,5 @@ jobs:
           server: ${{ secrets.server }}
           username: ${{ secrets.username }}
           password: ${{ secrets.password }}
-          local-dir: ./dist/static/
+          local-dir: ./dist/angular-static-blog/browser/
           server-dir: ./domains/budziszm.pl/public_html/
