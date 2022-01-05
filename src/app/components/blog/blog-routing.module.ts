@@ -4,7 +4,7 @@ import { BlogComponent } from './blog.component';
 import { PostResolver } from "../../services/post.resolver";
 
 const routes: Routes = [{
-  path: ':slug/.',
+  path: ':slug',
   component: BlogComponent,
   resolve: {
     post: PostResolver
