@@ -11,6 +11,9 @@
 /node_modules
 package-lock.json
 
+# Blog
+prerender-routes.txt
+
 # profiling files
 chrome-profiler-events*.json
 

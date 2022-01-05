@@ -5,6 +5,7 @@ const asciidoctor = Asciidoctor();
 const BLOG_PATH = 'blog';
 const RENDERED_PATH = 'src/assets/blog';
 const RENDERED_JSON = 'src/assets/blog.json';
+const ROUTES_TXT = 'prerender-routes.txt';
 
 highlightJsExt.register(asciidoctor.Extensions);
 
@@ -36,3 +37,4 @@ fs.readdirSync(BLOG_PATH).forEach(file => {
 });
 
 fs.writeFileSync(RENDERED_JSON, JSON.stringify({posts: renderedPosts}));
+fs.writeFileSync(ROUTES_TXT, renderedPosts.map(post => `/blog/${post.filename.replace('.html', '')}`).join('\n'));

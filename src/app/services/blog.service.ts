@@ -15,10 +15,8 @@ export class BlogService {
   }
 
   public async getPost(filename: string): Promise<string> {
-    const blob = await firstValueFrom(this.http.get(`http://localhost:4200/assets/blog/${filename}`, {
-      'responseType': 'blob' as 'text'
-    })) as unknown as Blob;
-
-    return await blob.text();
+    return await firstValueFrom(this.http.get(`http://localhost:4200/assets/blog/${filename}`, {
+      'responseType': 'text'
+    })) as string;
   }
 }
