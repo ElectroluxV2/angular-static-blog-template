@@ -1,0 +1,23 @@
+.title {
+  text-align: center;
+  font-size: 3rem;
+  padding: 1em 0;
+  border-bottom: 0;
+}
+
+.big-menu {
+  width: 100%;
+
+  display: grid;
+  place-items: center;
+
+  .links {
+    display: flex;
+    gap: 1em;
+    li {
+      margin: 0;
+      list-style: none;
+    }
+  }
+}
+

@@ -1,0 +1,8 @@
+<h1 class="title">Choose your enemy</h1>
+<article class="big-menu">
+  <ul class="links">
+    <li *ngFor="let post of blog.posts">
+      <a [routerLink]="'/blog/' + post.filename.replace('.html', '') + '/'">{{post.title}}</a>
+    </li>
+  </ul>
+</article>

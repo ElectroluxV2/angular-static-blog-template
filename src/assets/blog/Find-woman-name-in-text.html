@@ -1,0 +1,59 @@
+<div class="sect1">
+<h2 id="_find_woman_name_in_text">Find woman name in text</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Your task is to get input from user, print message depending on if input contains woman name until name equals <code>Laura</code></p>
+</div>
+<div class="paragraph">
+<p>We assume that word that starts with big letter and ends with small letter <code>a</code> is a valid woman given name.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_example">Example</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Input: <code>Alicja is dumb.</code><br>
+Output: <code>Found woman name "Alicja"</code></p>
+</div>
+<div class="paragraph">
+<p>Input: <code>Marcin is my the richest fellow content maker.</code><br>
+Output: <code>No woman name in text</code></p>
+</div>
+<div class="paragraph">
+<p>Input: <code>Laura is my bro &lt;3</code><br>
+Output: <code>Found target name, exiting</code></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_notes">Notes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Your program must be split into four functions:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-rust" data-lang="rust"><span class="hljs-keyword">fn</span> <span class="hljs-title function_">main</span>() { } <span class="hljs-comment">// Loop logic</span></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-rust" data-lang="rust"><span class="hljs-keyword">fn</span> <span class="hljs-title function_">get_input_from_user</span>() <span class="hljs-punctuation">-&gt;</span> &amp;<span class="hljs-type">str</span> { } <span class="hljs-comment">// Read user&#x27;s input, trim it and returns it.</span></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-rust" data-lang="rust"><span class="hljs-keyword">fn</span> <span class="hljs-title function_">get_woman_name_from_text</span>(text: &amp;<span class="hljs-type">str</span>) <span class="hljs-punctuation">-&gt;</span> <span class="hljs-type">Option</span>&lt;T&gt; { } <span class="hljs-comment">// Returns woman name from user input, consumes user input</span></code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-rust" data-lang="rust"><span class="hljs-keyword">fn</span> <span class="hljs-title function_">print_message_based_on_name_presence</span>(name: <span class="hljs-type">Option</span>&lt;T&gt;) { } <span class="hljs-comment">// Prints message</span></code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Your program must use <em>Option</em> and <em>Match</em>.</p>
+</div>
+</div>
+</div>

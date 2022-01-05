@@ -1,0 +1,45 @@
+:title: Find woman name in text
+:description: Rust exercise
+:category: Exercise
+
+== Find woman name in text
+
+Your task is to get input from user, print message depending on if input contains woman name until name equals `Laura`
+
+We assume that word that starts with big letter and ends with small letter `a` is a valid woman given name.
+
+== Example
+
+Input: `Alicja is dumb.` +
+Output: `Found woman name "Alicja"`
+
+Input: `Marcin is my the richest fellow content maker.` +
+Output: `No woman name in text`
+
+Input: `Laura is my bro <3` +
+Output: `Found target name, exiting`
+
+== Notes
+
+Your program must be split into four functions:
+[source, rust]
+----
+fn main() { } // Loop logic
+----
+
+[source, rust]
+----
+fn get_input_from_user() -> &str { } // Read user's input, trim it and returns it.
+----
+
+[source, rust]
+----
+fn get_woman_name_from_text(text: &str) -> Option<T> { } // Returns woman name from user input, consumes user input
+----
+
+[source,rust]
+----
+fn print_message_based_on_name_presence(name: Option<T>) { } // Prints message
+----
+
+Your program must use _Option_ and _Match_.

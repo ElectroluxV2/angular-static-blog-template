@@ -10,7 +10,8 @@
     "dev:ssr": "ng run angular-static-blog:serve-ssr",
     "serve:ssr": "node dist/angular-static-blog/server/main.js",
     "build:ssr": "ng build && ng run angular-static-blog:server",
-    "prerender": "ng run angular-static-blog:prerender"
+    "prerender": "ng run angular-static-blog:prerender",
+    "blog:render": "node blog-render.js"
   },
   "private": true,
   "dependencies": {
@@ -43,6 +44,8 @@
     "karma-coverage": "~2.1.0",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
-    "typescript": "~4.5.2"
+    "typescript": "~4.5.2",
+    "asciidoctor": "^2.2.5",
+    "asciidoctor-highlight.js": "^0.4.0"
   }
 }
