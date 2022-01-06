@@ -1,27 +1,24 @@
 # AngularStaticBlog
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+This project goal is to provide reliable page viewing experience on users.pja.edu.pl <br>
+But it can be easily deployed on other servers.
 
-## Development server
+## Quick start
+> By default, this automatic upload will clear www directory on evey update, you can change this in `deploy.yml`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* Create new repository by clicking `Use this template` button.
+* Provide two secrets in repository settings that is username and password
 
-## Code scaffolding
+And you are done! Just push new blog posts and see them on your page in about 2 minutes.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Blog posting
 
-## Build
+Clone your repository and run this command `npm i && npm run blog:post`, type new post's title and hit enter. Find new .adoc file inside blog directory, edit it and commit changes. Publishing will be handled for you automatically.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+It's possible to create new post just by using GitHub's webpage interface. In order to create new post, you just need to create new file inside blog directory with .adoc extension, file MUST include standard post header, that is:
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```adoc
+:title: Post title
+:description: Blog post
+:category: Default
+```
