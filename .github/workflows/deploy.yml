@@ -20,7 +20,7 @@ jobs:
           npm run prerender
 
       - name: 📂 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        uses: SamKirkland/FTP-Deploy-Action@4.2.0
         with:
           timeout_minutes: 1
           max_attempts: 3
