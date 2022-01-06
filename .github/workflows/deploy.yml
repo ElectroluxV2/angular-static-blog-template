@@ -22,8 +22,9 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          server: ${{ secrets.server }}
+          protocol: sftp
+          server: sftp.pjwstk.edu.pl
           username: ${{ secrets.username }}
           password: ${{ secrets.password }}
           local-dir: ./dist/angular-static-blog/browser/
-          server-dir: ${{ secrets.dir }}
+          server-dir: ./www/
