@@ -20,13 +20,13 @@ jobs:
           npm run prerender
 
       - name: 📂 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@4.2.0
+        uses: sand4rt/ftp-deployer@v1.3
         with:
-          timeout_minutes: 1
-          max_attempts: 3
-          protocol: ftps
-          server: sftp.pjwstk.edu.pl
+          sftp: true
+          host: sftp.pjwstk.edu.pl
+          port: 22
           username: ${{ secrets.username }}
           password: ${{ secrets.password }}
-          local-dir: ./dist/angular-static-blog/browser/
-          server-dir: ./www/
+          remote_folder: ./www/
+          local_folder: ./dist/angular-static-blog/browser/
+          cleanup: true
