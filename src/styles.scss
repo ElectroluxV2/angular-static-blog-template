@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-/* You can add global styles to this file, and also import other style files */
+$sl-overlay-background: var(--color-canvas-default);
+$sl-navigation-color: var(--color-fg-default);
+@import "~simplelightbox/src/simple-lightbox.scss";
 @import url("~highlight.js/scss/github-dark.scss") (prefers-color-scheme: dark);
 @import url("~highlight.js/scss/github.scss") (prefers-color-scheme: light);
 

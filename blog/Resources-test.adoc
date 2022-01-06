@@ -6,6 +6,6 @@
 
 Post content goes here...
 
-image::assets/img/img.png[]
+image::assets/img/img.png[link="assets/img/img.png"]
 
 link:assets/res/res.txt[resource]
