@@ -1,0 +1,11 @@
+:title: Resources test
+:description: Blog post
+:category: Default
+
+== Resources test
+
+Post content goes here...
+
+image::assets/img/img.png[]
+
+link:assets/res/res.txt[resource]
