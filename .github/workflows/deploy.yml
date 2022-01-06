@@ -22,6 +22,8 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
+          timeout_minutes: 1
+          max_attempts: 3
           protocol: ftps
           server: sftp.pjwstk.edu.pl
           username: ${{ secrets.username }}
