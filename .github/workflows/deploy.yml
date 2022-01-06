@@ -16,6 +16,7 @@ jobs:
       - name: Setup base href
         uses: jacobtomlinson/gha-find-replace@v2
         with:
+          include: 'index.html'
           find: '<base href="/">'
           replace: '<base href="/~${{ secrets.username }}/">'
 
