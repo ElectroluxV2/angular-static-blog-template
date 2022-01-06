@@ -13,6 +13,12 @@ jobs:
         with:
           node-version: '16'
 
+      - name: Setup base href
+        uses: jacobtomlinson/gha-find-replace@v2
+        with:
+          find: '<base href="/">'
+          replace: '<base href="/~${{ secrets.username }}/">'
+
       - name: 🔨 Build Project
         run: |
           npm install
