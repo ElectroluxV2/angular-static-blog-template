@@ -22,7 +22,7 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-          protocol: sftp
+          protocol: ftps
           server: sftp.pjwstk.edu.pl
           username: ${{ secrets.username }}
           password: ${{ secrets.password }}
