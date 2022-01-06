@@ -6,7 +6,6 @@
 
 .big-menu {
   width: 100%;
-
   display: grid;
   place-items: center;
 
@@ -14,15 +13,29 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
+    padding: 0;
 
     li {
       margin: 0;
       list-style: none;
-
-      min-width: 200px;
       flex-basis: auto;
       flex-grow: 1;
     }
   }
 }
 
+@media screen and (max-width: 767px) {
+  .title {
+    text-align: left;
+  }
+
+  .big-menu {
+    place-items: start;
+
+    .links {
+      li {
+        min-width: 100%;
+      }
+    }
+  }
+}
